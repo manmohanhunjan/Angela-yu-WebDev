@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .mainContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .gridContainer {
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-rows: 414px 285px 20px;
+      grid-template-columns: 320px 315px 50px;
+    }
+
+    .white-sq1,
+    .white-sq2,
+    .white-sq3,
+    .white-sq4-spanRow2,
+    .white-sq5,
+    .white-sq6,
+    .white-sq7 {
+      background-color: #F0F1EC;
+    }
+
+    .white-sq1,
+    .white-sq2 {
+      border-bottom: 1rem solid black;
+    }
+
+    .white-sq3 {
+      border-bottom: 1rem solid black;
+      border-right: 1rem solid black;
+    }
+
+    .white-sq5 {
+      border-right: 1rem solid black;
+    }
+
+    .red-sq {
+      background-color: #E72F24;
+      border-right: 1rem solid black;
+      border-bottom: 1rem solid black;
+    }
+
+    .white-sq4-spanRow2 {
+      border-right: 1rem solid black;
+      border-bottom: 1rem solid black;
+    }
+
+    .darkblue-sq {
+      background-color: #004592;
+      border-bottom: 1rem solid black;
+    }
+
+    .grid-yellow-black {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: 20px;
+      grid-template-columns: 198px 117px;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .grid-dblue-white {
+      display: grid;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="mainContainer">
+    <div class="gridContainer">
+      <div class="red-sq"></div>
+      <div class="white-sq1"></div>
+      <div class="white-sq2"></div>
+      <div class="white-sq3"></div>
+      <div class="white-sq4-spanRow2"></div>
+
+      <div class="grid-dblue-white">
+        <div class="darkblue-sq"></div>
+        <div class="white-sq6"></div>
+      </div>
+
+      <div class="white-sq5"></div>
+
+      <div class="grid-yellow-black">
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+
+      <div class="white-sq7"></div>
+
+    </div>
+  </div>
+</body>
+
+</html>
