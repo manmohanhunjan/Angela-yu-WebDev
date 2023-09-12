@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D1D8EC;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div {
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #D1D8EC;
+    -webkit-box-shadow: 12px 12px 24px #bac0d2, -12px -12px 24px #e8f0ff;
+    box-shadow: 12px 12px 24px #bac0d2, -12px -12px 24px #e8f0ff;
+    margin-left: 35%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    background: #D1D8EC;
+    -webkit-box-shadow: 12px 12px 24px #bac0d2, -12px -12px 24px #e8f0ff;
+    box-shadow: 12px 12px 24px #bac0d2, -12px -12px 24px #e8f0ff;
+
+}
+
+/* placeholder disapperas with animation on click on input */
+input:focus::-webkit-input-placeholder {
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 0.75s;
+    animation-name: example;
+    animation-duration: 0.75s;
+    opacity: 0;
+    /* transistion */
+    -webkit-transition: opacity 0.75s ease-in-out;
+    -moz-transition: opacity 0.75s ease-in-out;
+    -ms-transition: opacity 0.75s ease-in-out;
+    -o-transition: opacity 0.75s ease-in-out;
+    transition: opacity 0.75s ease-in-out;
+
+}
+
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    background: #D1D8EC;
+    -webkit-box-shadow: 7px 7px 24px #bac0d2, -7px -7px 24px #e8f0ff;
+    box-shadow: 7px 7px 24px #bac0d2, -7px -7px 24px #e8f0ff;
+    cursor: pointer;
+}
+
+#bmi {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bmi a {
+    text-decoration: none;
+    color: black;
+
+}
